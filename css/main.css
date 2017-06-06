@@ -48,7 +48,7 @@ hr{
 }
 
 a {
-	color: #AA9159;
+	color: #7d642b;
 	text-decoration: none;
 	-webkit-transition: color 0.5s ease 0s;
 	-moz-transition: color 0.5s ease 0s;
@@ -67,6 +67,11 @@ a:focus {
 .col-sm-8 {
     margin-top: 6.5px;
 }
+
+.col-sm-9 > p {
+    color: #7d642b;
+}
+
 /*
  * BUTTONS
  */
@@ -677,6 +682,11 @@ a:focus {
     margin-bottom: 0;
     color: #212121;
     text-align:justify;
+}
+
+.timeline-body > ul > li {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
     .timeline-body > p + p {
