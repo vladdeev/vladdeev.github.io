@@ -48,7 +48,7 @@ hr{
 }
 
 a {
-	color: #7d642b;
+	color: #71735d;
 	text-decoration: none;
 	-webkit-transition: color 0.5s ease 0s;
 	-moz-transition: color 0.5s ease 0s;
@@ -69,7 +69,7 @@ a:focus {
 }
 
 .col-sm-9 > p {
-    color: #7d642b;
+    color: #71735d;
 }
 
 /*
@@ -149,7 +149,7 @@ a:focus {
 .navbar-nav > li > a,
 .navbar-nav .dropdown-menu > li > a {
 	color:white;
-	font-size:10px;
+	font-size:12.5px;
 }
 .navbar-nav > li{
 	-webkit-transition: border-bottom-color 1s ease-in-out;
@@ -1445,7 +1445,7 @@ section:nth-child(odd) {
 	margin-bottom:10px;
 }
 #clients{
-	background:#F5F5F5;
+	background:#cdd5d4;
 }
 #testimonials{
 	background:#F5F5F5;
