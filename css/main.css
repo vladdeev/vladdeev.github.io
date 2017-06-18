@@ -981,7 +981,7 @@ a:focus {
 .portfolio-grid div img, .portfolio-grid div .portfolio-hover {
     display: block;
     max-width: 100%;
-    cursor:crosshair;
+    cursor: pointer;
 }
 .portfolio-link{
 	position:relative;
