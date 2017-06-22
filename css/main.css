@@ -1675,7 +1675,9 @@ hr.not-visible{
 	}
 }
 
-
+#resume {
+	text-align: center;
+}
 
 
 /*only for webkit  browsers*/
