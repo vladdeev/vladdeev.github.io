@@ -973,7 +973,6 @@ a:focus {
 }
 .portfolio-grid div {
     display: block;
-
     opacity: 1;
     padding: 0px;
 
@@ -982,41 +981,29 @@ a:focus {
     display: block;
     max-width: 100%;
     cursor: pointer;
+	  opacity: 0.95;
 }
 .portfolio-link{
 	position:relative;
 	background-color:black;
 	overflow:hidden;
-	-webkit-transition: all 0.5s ease-in-out;
-    -moz-transition:all   0.5s ease-in-out;
-     -o-transition: all  0.5s ease-in-out;
-    transition: all   0.5s ease-in-out;
 }
-.portfolio-link img{
-	-webkit-transition: all 3.4s ease 0s;
-	-moz-transition: all 3.4s ease 0s;
-	-o-transition: all 3.4s ease 0s;
-	transition: all 3.4s ease 0s;
-}
+
 .portfolio-link .info{
-	color:white;
-	opacity:0;
-	padding:10px;
-	position:absolute;
-	top:220px;
-	width:100%;
-	text-align:center;
-	-webkit-transition: all 0.4s ease 0s;
-	-moz-transition: all 0.4s ease 0s;
-	-o-transition: all 0.4s ease 0s;
-	transition: all 0.4s ease 0s;
+	color: white;
+	opacity: 0.7;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #040403;
 }
 .portfolio-link .info h2{
 	color:white;
 	font-weight:100;
 	text-transform:uppercase;
-	font-size:30px;
-	line-height:30px;
+	font-size:25px;
+	line-height:15px;
 	letter-spacing:3px;
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
@@ -1029,25 +1016,7 @@ a:focus {
 	top:120px;
 	opacity:1;
 }
-.portfolio-link.hover img, .portfolio-link.active .img{
-	opacity:0.6;
-	-webkit-transform:scale(1.1) rotate(-1deg);
-	-moz-transform:scale(1.1)rotate(-1deg);
-	-ms-transform:scale(1.1)rotate(-1deg);
-	-o-transform:scale(1.1)rotate(-1deg);
-	transform:scale(1.1)rotate(-1deg);
 
-}
-
-
-.portfolio-link.inactive{
-	opacity:0.2;
-	-webkit-transform:scale(0.9);
-	-moz-transform:scale(0.9);
-	-ms-transform:scale(0.9);
-	-o-transform:scale(0.9);
-	transform:scale(0.9);
-}
 #portfolio{
 	padding-bottom:0px;
 }
@@ -1114,10 +1083,11 @@ a:focus {
 .portfolio-container .date p,
 .portfolio-container .url p,
 .portfolio-container .tags p {
-	font-size:13px;
-	line-height:13px;
+	font-size:15px;
+	line-height:15px;
 	padding:0;
 	margin:0;
+
 }
 
 .portfolio-container .client h5,
@@ -1143,10 +1113,6 @@ a:focus {
 	text-decoration: none;
 	border-radius: 0 4px 4px 0;
 	margin-right: 25px;
-	/*-webkit-transition: background 0.5s ease 0s;
-	-moz-transition: background 0.5s ease 0s;
-	-o-transition: background 0.5s ease 0s;
-	transition: background 0.5s ease 0s;*/
 }
 
 .portfolio-container .tagIcon:before {
@@ -1157,10 +1123,6 @@ a:focus {
 	border-color: transparent #4F4F4F transparent transparent;
 	border-style: solid;
 	border-width: 15px 15px 15px 0;
-	/*-webkit-transition: border-color 0.5s ease 0s;
-	-moz-transition: border-color 0.5s ease 0s;
-	-o-transition: border-color 0.5s ease 0s;
-	transition: border-color 0.5s ease 0s;*/
 }
 
 .portfolio-container .tagIcon::after {
@@ -1193,10 +1155,6 @@ a:focus {
 	top: 15px;
 	width: 40px;
 	z-index: 999;
-	/*-webkit-transition: opacity 0.5s ease 0s;
-	-moz-transition: opacity 0.5s ease 0s;
-	-o-transition: opacity 0.5s ease 0s;
-	transition: opacity 0.5s ease 0s;*/
 }
 
 .portfolio-close:hover {
@@ -1213,10 +1171,6 @@ a:focus {
 	margin-top: -2px;
 	position: absolute;
 	top: 50%;
-	/*-webkit-transition: background-color 0.3s ease 0s;
-	-moz-transition: background-color 0.3s ease 0s;
-	-o-transition: background-color 0.3s ease 0s;
-	transition: background-color 0.3s ease 0s;*/
 	width: 100%;
 }
 
@@ -1230,27 +1184,7 @@ a:focus {
 	height: 100%;
 	left: 0;
 	position: absolute;
-	/*-webkit-transition: transform 0.3s ease 0s;
-	-moz-transition: transform 0.3s ease 0s;
-	-o-transition: transform 0.3s ease 0s;
-	transition: transform 0.3s ease 0s;*/
 	width: 100%;
-}
-
-.portfolio-close span:before {
-	/*-webkit-transform: translateY(0px) rotate(45deg);
-	-moz-transform: translateY(0px) rotate(45deg);
-	-ms-transform: translateY(0px) rotate(45deg);
-	-o-transform: translateY(0px) rotate(45deg);
-	transform: translateY(0px) rotate(45deg);*/
-}
-
-.portfolio-close span:after {
-	/*-webkit-transform: translateY(0px) rotate(-45deg);
-	-moz-transform: translateY(0px) rotate(-45deg);
-	-ms-transform: translateY(0px) rotate(-45deg);
-	-o-transform: translateY(0px) rotate(-45deg);
-	transform: translateY(0px) rotate(-45deg);*/
 }
 
 

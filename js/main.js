@@ -21,38 +21,38 @@ SLAMR.nav= function(options){
 
 	// add class after scrolling
 	//don't do this on small devices
-	
+
 
 	$(window).resize(function(){
 		scrollEffect();
 	});
-	
+
 	function scrollEffect() {
 
-			if(!($(window).width() > 768)){	
+			if(!($(window).width() > 768)){
 				if(!$(".navbar-fixed-top").hasClass("top-nav-collapse")){
-					$(".navbar-fixed-top").addClass("top-nav-collapse");	
+					$(".navbar-fixed-top").addClass("top-nav-collapse");
 				}
 			}else{
 				if($(".navbar-fixed-top").hasClass("top-nav-collapse")){
-					$(".navbar-fixed-top").removeClass("top-nav-collapse");	
+					$(".navbar-fixed-top").removeClass("top-nav-collapse");
 				}
 			}
 
 			$(window).scroll(function() {
-				if($(window).width() > 768){						
+				if($(window).width() > 768){
 						if ($(".navbar").offset().top > 50) {
 							$(".navbar-fixed-top").addClass("top-nav-collapse");
 						} else {
-							$(".navbar-fixed-top").removeClass("top-nav-collapse");					
+							$(".navbar-fixed-top").removeClass("top-nav-collapse");
 						}
 					}else{
 						$(".navbar-fixed-top").addClass("top-nav-collapse");
-					}		
+					}
 			});
 
 	};
-	
+
 	scrollEffect();
 
 	if(options == "dropdown"){
@@ -111,13 +111,13 @@ SLAMR.slideDownHead = function(option){
  *
 ****************************************************************************************************/
 SLAMR.parallax = function(option){
-	
+
 		if(option){
 			if (!Modernizr.touch){
 				var s = skrollr.init({
 					mobileDeceleration: 1,
 					constants: {
-				
+
 					},
 					edgeStrategy: 'set',
 					forceHeight: false,
@@ -129,8 +129,8 @@ SLAMR.parallax = function(option){
 							}
 					}
 				});
-			} 	
-		};	
+			}
+		};
 };
 /****************************************************************************************************
  * PRELOADER
@@ -141,13 +141,13 @@ SLAMR.parallax = function(option){
 SLAMR.preloader = function() {
 
 
-		
+
 		$(window).load(function() {
 			$('#preloader').fadeOut(800, function() {
 				$('body').css('overflow', 'visible');
 			});
 		});
-			
+
 };
 
 /****************************************************************************************************
@@ -157,13 +157,13 @@ SLAMR.preloader = function() {
  *
 ****************************************************************************************************/
 SLAMR.slider = function(selector, options){
-	
-	$(window).load(function() {			
+
+	$(window).load(function() {
 		$(selector).superslides(options);
 	});
-	
+
 };
-	
+
 /****************************************************************************************************
  * OWL CAROUSEL
  *
@@ -171,21 +171,21 @@ SLAMR.slider = function(selector, options){
  *
 ****************************************************************************************************/
 SLAMR.owlCarousel = function (options){
-	
+
 	$.each(options, function(index,value) {
-          
+
           if(value != null){
-          	//if carousel has parameters 
+          	//if carousel has parameters
          	$(index).owlCarousel(value);
           }else{
           	//if there are no parameters
           	$(index).owlCarousel();
           }
-              
+
        });
 
 
-		
+
 };
 
 
@@ -196,7 +196,7 @@ SLAMR.owlCarousel = function (options){
  *
 ****************************************************************************************************/
 SLAMR.skillbar = function(animated){
-		
+
 		if(animated == "animated"){
 				if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 					// Triggering only when it is inside viewport
@@ -210,23 +210,23 @@ SLAMR.skillbar = function(animated){
 								return $(window).height() - $(this).outerHeight();
 							}
 						});
-			
+
 				}else {
 					$('.skillbar').each(function(){
 						var $this = $(this);
-						$this.find('.skillbar-bar').css({width:$this.attr('data-percent')});							
+						$this.find('.skillbar-bar').css({width:$this.attr('data-percent')});
 					});
-						
+
 				}
-		
+
 		}else{
-			//if not animated					
+			//if not animated
 				$('.skillbar').each(function(){
 					var $this = $(this);
-					$this.find('.skillbar-bar').css({width:$this.attr('data-percent')});							
+					$this.find('.skillbar-bar').css({width:$this.attr('data-percent')});
 				});
 		}
-		
+
 };
 /****************************************************************************************************
  * YOUTUBE VIDEO PLAYER
@@ -236,11 +236,11 @@ SLAMR.skillbar = function(animated){
 ****************************************************************************************************/
 SLAMR.videoBgYT = function(selector,video){
 	if(!Modernizr.touch){
-		$(selector).tubular({videoId:video,wrapperZIndex: 9999}); 	
+		$(selector).tubular({videoId:video,wrapperZIndex: 9999});
 	}else{
 		$(selector).html("<img src='img/bg-head-1.jpg' alt='' />");
 	};
-	 
+
 };
 
 
@@ -251,17 +251,17 @@ SLAMR.videoBgYT = function(selector,video){
  *
 ****************************************************************************************************/
 SLAMR.bootstrapCarousel = function (options){
-	
+
 		$.each(options, function(index,value) {
-          
+
           if(value != null){
-          	//if carousel has parameters 
+          	//if carousel has parameters
          	$(index).carousel(value);
           }else{
           	//if there are no parameters
           	$(index).carousel();
           }
-              
+
        });
 
 };
@@ -271,75 +271,75 @@ SLAMR.bootstrapCarousel = function (options){
  *
  *
  *
-****************************************************************************************************/	
-SLAMR.fitVids = function (selector){	
-	$(selector).fitVids();	      
+****************************************************************************************************/
+SLAMR.fitVids = function (selector){
+	$(selector).fitVids();
 };
 /****************************************************************************************************
  * PORTFOLIO FILTER
- * 
+ *
  *
  *
  *
 ****************************************************************************************************/
 
 SLAMR.portfolioFilter = function (selector, item){
-	
-	$(selector).click(function(e){
-		e.preventDefault();
-		$(selector).removeClass("current");
-		$(this).addClass("current");
-		var filter = $(this).attr("data-group");
-			
-		if(filter != "all"){			
-			$(item).each(function(){
-				var theItem = $(this);
-				$(".portfolio-link",theItem).addClass("inactive");
-				var categories = $(this).attr("data-group");			
-				if (typeof categories !== 'undefined' && categories !== false){
-					categories = categories.split(",");
-					$.each(categories, function(i,currentCat){
-						if (filter == currentCat){
+	// 
+	// $(selector).click(function(e){
+	// 	e.preventDefault();
+	// 	$(selector).removeClass("current");
+	// 	$(this).addClass("current");
+	// 	var filter = $(this).attr("data-group");
+	//
+	// 	if(filter != "all"){
+	// 		$(item).each(function(){
+	// 			var theItem = $(this);
+	// 			$(".portfolio-link",theItem).addClass("inactive");
+	// 			var categories = $(this).attr("data-group");
+	// 			if (typeof categories !== 'undefined' && categories !== false){
+	// 				categories = categories.split(",");
+	// 				$.each(categories, function(i,currentCat){
+	// 					if (filter == currentCat){
+	//
+	// 						$(".portfolio-link",theItem).removeClass("inactive");
+	// 						return;
+	// 					}
+	// 				});
+	// 			}
+	// 		});
+	// 	}else{
+	// 		$(item).each(function(){
+	// 			$(".portfolio-link", $(this)).removeClass("inactive");
+	// 		});
+	// 	}
+	// });
+	//
+	//
+	// //hover effects
+	// $(document).ready(function(){
+	// 	$(item).each(function(){
+	// 		$(this).hover(
+	// 			  function() {
+	// 			  	if(!$(".portfolio-link", this).hasClass("inactive")){
+	// 			  		$(".portfolio-link", this).addClass("hover");
+	// 			  	}
+	// 			  },
+	// 			  function() {
+	// 			    $(".portfolio-link", this).removeClass("hover");
+	// 			  }
+	// 			);
+	// 	});
+	// });
+	//
 
-							$(".portfolio-link",theItem).removeClass("inactive");
-							return;
-						}
-					});
-				}			
-			});			
-		}else{
-			$(item).each(function(){
-				$(".portfolio-link", $(this)).removeClass("inactive");
-			});
-		}
-	});
-	
-	
-	//hover effects
-	$(document).ready(function(){
-		$(item).each(function(){
-			$(this).hover( 
-				  function() {
-				  	if(!$(".portfolio-link", this).hasClass("inactive")){
-				  		$(".portfolio-link", this).addClass("hover");
-				  	}			    
-				  },
-				  function() {
-				    $(".portfolio-link", this).removeClass("hover");
-				  }
-				);
-		});
-	});
-	
-	
-	
-	
-	
-	
+
+
+
+
 }
 /****************************************************************************************************
  * PORTFOLIO
- * 
+ *
  *
  *
  *
@@ -347,17 +347,17 @@ SLAMR.portfolioFilter = function (selector, item){
 
 SLAMR.portfolio = function (selector,options){
 	$(selector).portfolioExpander(options);
-}	
+}
 
 /****************************************************************************************************
  *  SCROLLING ANIMATIONS
- *	
+ *
  *	takes data-animation, data-animation-delay as data attributes. Element needs to have class animation
  *
-****************************************************************************************************/			
-SLAMR.scrollAnim = function(option){	
+****************************************************************************************************/
+SLAMR.scrollAnim = function(option){
 		$(window).load(function() {
-			if(option == "yes"){		
+			if(option == "yes"){
 					//trigger css3 animations
 					// Handle appear event for animated elements
 					var wpOffset = 80;
@@ -426,20 +426,20 @@ SLAMR.scrollAnim = function(option){
  *
 ****************************************************************************************************/
 SLAMR.magnific = function (options){
-	
+
 	$.each(options, function(index,value) {
           if(value != null){
-          	//if carousel has parameters 
+          	//if carousel has parameters
          	$(index).magnificPopup(value);
           }else{
           	//if there are no parameters
           	$(index).magnificPopup();
           }
-              
+
        });
 
 
-		
+
 }
 
 /****************************************************************************************************
@@ -472,11 +472,10 @@ SLAMR.contactForm = function (){
 			});
 			return false;
 		});
-		
+
 };
 
 
 
 
-}(jQuery)); 
-
+}(jQuery));
