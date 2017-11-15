@@ -3,8 +3,9 @@ body {
 }
 .widget-section {
 	display: block;
-	width: 100%;
+	width: 300px;
 	height: auto;
+	margin: 0 auto;
 }
 
 .widget-section h1 {
@@ -12,8 +13,4 @@ body {
     font-family: sans-serif;
     font-size: 1.25em;
     color: #eeeeee;
-}
-
-.widget-container {
-	display: block;
 }
