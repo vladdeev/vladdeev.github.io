@@ -11,21 +11,22 @@
 			ga('create', 'UA-99046263-1', 'auto');
 			ga('send', 'pageview');
 		</script>
-		<script>
-            window.onload = function() {
-                var iframeEl = document.getElementById("insticator-embed");
-                iframeEl.width="300px";
-                iframeEl.height="350px";
-                var div = document.createElement("div");
-                div.id = "app";
-                iframeEl.contentWindow.document.body.appendChild(div);
-                var script = document.createElement("script");
-                script.type = "text/javascript";
-                script.async = true;
-                script.src = "https://s3.amazonaws.com/embedlocalhost/test/embed_4_0_vladdeev.js";
-                iframeEl.contentWindow.document.head.appendChild(script);
-            }
-		</script>
+		<script type="text/javascript" async src="https://s3.amazonaws.com/embedlocalhost/test/embed_4_0_vladdeev.js"></script>
+		<!--<script>-->
+            <!--window.onload = function() {-->
+                <!--var iframeEl = document.getElementById("insticator-embed");-->
+                <!--iframeEl.width="300px";-->
+                <!--iframeEl.height="350px";-->
+                <!--var div = document.createElement("div");-->
+                <!--div.id = "app";-->
+                <!--iframeEl.contentWindow.document.body.appendChild(div);-->
+                <!--var script = document.createElement("script");-->
+                <!--script.type = "text/javascript";-->
+                <!--script.async = true;-->
+                <!--script.src = "https://s3.amazonaws.com/embedlocalhost/test/embed_4_0_vladdeev.js";-->
+                <!--iframeEl.contentWindow.document.head.appendChild(script);-->
+            <!--}-->
+		<!--</script>-->
 		<!-- Insticator Header Tag Code -->
 		<script data-cfasync='false' type='text/javascript'>/*<![CDATA[*/(function (a, c, s, u){'Insticator'in a || (a.Insticator={ad:{loadAd: function (b){Insticator.ad.q.push(b)}, q: []}, helper:{}, embed:{}, version: "3.0", q: [], load: function (t, o){Insticator.q.push({t: t, o: o})}}); var b=c.createElement(s); b.src=u; b.async=!0; var d=c.getElementsByTagName(s)[0]; d.parentNode.insertBefore(b, d)})(window, document, 'script', '//d2na2p72vtqyok.cloudfront.net/client-embed/b952f440-5dc1-43c6-9ed5-35029fe6e913.js');/*]]>*/</script>
 		<!-- End Insticator Header Tag Code -->
@@ -40,7 +41,8 @@
 				<script data-cfasync='false' type="text/javascript">
 					/*<![CDATA[*/Insticator.ad.loadAd("div-insticator-ad-1");/*]]>*/
 				</script>
-				<iframe id="insticator-embed"></iframe>
+				<!--<iframe id="insticator-embed"></iframe>-->
+				<div id="app"></div>
 				<div id="div-insticator-ad-2"></div>
 				<script data-cfasync='false' type="text/javascript">
 					/*<![CDATA[*/Insticator.ad.loadAd("div-insticator-ad-2");/*]]>*/
