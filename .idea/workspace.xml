@@ -29,11 +29,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/embed/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="43" column="64" lean-forward="false" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
-              <folding>
-                <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="506">
+              <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -178,12 +176,12 @@
       <workItem from="1521845392754" duration="697000" />
       <workItem from="1522072439899" duration="23000" />
       <workItem from="1522076542986" duration="587000" />
-      <workItem from="1522180647873" duration="873000" />
+      <workItem from="1522180647873" duration="1091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17658000" />
+    <option name="totallyTimeSpent" value="17876000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -239,9 +237,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -368,11 +364,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/embed/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="43" column="64" lean-forward="false" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="506">
+          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
