@@ -16,6 +16,7 @@
                 var iframeEl = document.getElementById("insticator-embed");
                 iframeEl.width="300px";
                 iframeEl.height="350px";
+                iframeEl.border="none";
                 var div = document.createElement("div");
                 div.id = "app";
                 iframeEl.contentWindow.document.body.appendChild(div);
@@ -40,7 +41,7 @@
 				<script data-cfasync='false' type="text/javascript">
 					/*<![CDATA[*/Insticator.ad.loadAd("div-insticator-ad-1");/*]]>*/
 				</script>
-				<iframe id="insticator-embed"></iframe>
+				<iframe style="width:0px;height:0px;border:none;" id="insticator-embed"></iframe>
 				<!--<div id="app"></div>-->
 				<div id="div-insticator-ad-2"></div>
 				<script data-cfasync='false' type="text/javascript">
