@@ -25,39 +25,33 @@
                 script.async = true;
                 script.src = "https://s3.amazonaws.com/embed-v4-localhost/embed-core/embed-core-dfp.js";
                 iframeEl.contentWindow.document.head.appendChild(script);
+
+                var iframeEl1 = document.getElementById("insticator-embed-300-250");
+                iframeEl1.width="300px";
+                iframeEl1.height="250px";
+                iframeEl1.border="none";
+                var div1 = document.createElement("div");
+                div1.id = "app";
+                iframeEl1.contentWindow.document.body.appendChild(div1);
+                var script1 = document.createElement("script");
+                script1.type = "text/javascript";
+                script1.async = true;
+                script1.src = "https://s3.amazonaws.com/embed-v4-localhost/embed-core/embed-core-dfp-300-250.js";
+                iframeEl1.contentWindow.document.head.appendChild(script1);
+
+                var iframeEl10 = document.getElementById("insticator-embed-600-350");
+                iframeEl10.width="600px";
+                iframeEl10.height="350px";
+                iframeEl10.border="none";
+                var div10 = document.createElement("div");
+                div10.id = "app";
+                iframeEl10.contentWindow.document.body.appendChild(div10);
+                var script10 = document.createElement("script");
+                script10.type = "text/javascript";
+                script10.async = true;
+                script10.src = "https://s3.amazonaws.com/embed-v4-localhost/embed-core/embed-core-dfp-600-350.js";
+                iframeEl10.contentWindow.document.head.appendChild(script10);
             }
-		</script>
-		<script>
-			window.onload = function() {
-				var iframeEl = document.getElementById("insticator-embed-300-250");
-				iframeEl.width="300px";
-				iframeEl.height="250px";
-				iframeEl.border="none";
-				var div = document.createElement("div");
-				div.id = "app";
-				iframeEl.contentWindow.document.body.appendChild(div);
-				var script = document.createElement("script");
-				script.type = "text/javascript";
-				script.async = true;
-				script.src = "https://s3.amazonaws.com/embed-v4-localhost/embed-core/embed-core-dfp-300-250.js";
-				iframeEl.contentWindow.document.head.appendChild(script);
-			}
-		</script>
-		<script>
-			window.onload = function() {
-				var iframeEl = document.getElementById("insticator-embed-600-350");
-				iframeEl.width="600px";
-				iframeEl.height="350px";
-				iframeEl.border="none";
-				var div = document.createElement("div");
-				div.id = "app";
-				iframeEl.contentWindow.document.body.appendChild(div);
-				var script = document.createElement("script");
-				script.type = "text/javascript";
-				script.async = true;
-				script.src = "https://s3.amazonaws.com/embed-v4-localhost/embed-core/embed-core-dfp-600-350.js";
-				iframeEl.contentWindow.document.head.appendChild(script);
-			}
 		</script>
 	</head>
 
@@ -68,11 +62,11 @@
 				<iframe id="insticator-embed-300-350"></iframe>
 		</section>
 		<section class="widget-section">
-			<h1>300X350</h1>
+			<h1>300X250</h1>
 			<iframe id="insticator-embed-300-250"></iframe>
 		</section>
 		<section class="widget-section">
-			<h1>300X350</h1>
+			<h1>600X350</h1>
 			<iframe id="insticator-embed-600-350"></iframe>
 		</section>
     </body>
