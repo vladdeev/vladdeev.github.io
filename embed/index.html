@@ -27,6 +27,38 @@
                 iframeEl.contentWindow.document.head.appendChild(script);
             }
 		</script>
+		<script>
+			window.onload = function() {
+				var iframeEl = document.getElementById("insticator-embed-300-250");
+				iframeEl.width="300px";
+				iframeEl.height="250px";
+				iframeEl.border="none";
+				var div = document.createElement("div");
+				div.id = "app";
+				iframeEl.contentWindow.document.body.appendChild(div);
+				var script = document.createElement("script");
+				script.type = "text/javascript";
+				script.async = true;
+				script.src = "https://s3.amazonaws.com/embed-v4-localhost/embed-core/embed-core-dfp-300-250.js";
+				iframeEl.contentWindow.document.head.appendChild(script);
+			}
+		</script>
+		<script>
+			window.onload = function() {
+				var iframeEl = document.getElementById("insticator-embed-600-350");
+				iframeEl.width="600px";
+				iframeEl.height="350px";
+				iframeEl.border="none";
+				var div = document.createElement("div");
+				div.id = "app";
+				iframeEl.contentWindow.document.body.appendChild(div);
+				var script = document.createElement("script");
+				script.type = "text/javascript";
+				script.async = true;
+				script.src = "https://s3.amazonaws.com/embed-v4-localhost/embed-core/embed-core-dfp-600-350.js";
+				iframeEl.contentWindow.document.head.appendChild(script);
+			}
+		</script>
 	</head>
 
 	<body>
@@ -34,7 +66,14 @@
 		<section class="widget-section">
 				<h1>300X350</h1>
 				<iframe id="insticator-embed-300-350"></iframe>
-			</div>
+		</section>
+		<section class="widget-section">
+			<h1>300X350</h1>
+			<iframe id="insticator-embed-300-250"></iframe>
+		</section>
+		<section class="widget-section">
+			<h1>300X350</h1>
+			<iframe id="insticator-embed-600-350"></iframe>
 		</section>
     </body>
 </html>

@@ -15,6 +15,14 @@ body {
     color: #eeeeee;
 }
 
-iframe#insticator-embed {
+iframe#insticator-embed-300-350 {
+	border: none;
+}
+
+iframe#insticator-embed-600-350 {
+	border: none;
+}
+
+iframe#insticator-embed-300-250 {
 	border: none;
 }
