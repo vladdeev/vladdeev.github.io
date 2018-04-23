@@ -12,8 +12,13 @@
 			ga('send', 'pageview');
 		</script>
 		<script>
+
             window.onload = function() {
-                var iframeEl = document.getElementById("insticator-embed-300-350");
+                if (window.navigator.userAgent.indexOf('MSIE ') > 0 || window.navigator.userAgent.indexOf('Trident/') > 0) {
+                    console.log('IE Detected');
+                    return null;
+				}
+				var iframeEl = document.getElementById("insticator-embed-300-350");
                 iframeEl.width="100%";
                 iframeEl.height="350px";
                 iframeEl.border="none";
