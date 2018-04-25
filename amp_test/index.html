@@ -18,24 +18,26 @@
       }
     </script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-    <script type="application/ld+json">
-        console.log('WTF')
-        window.onload = function() {
-            if (window.navigator.userAgent.indexOf('MSIE ') > 0 || window.navigator.userAgent.indexOf('Trident/') > 0) {
-                console.log('IE Detected');
-                return null;
-            }
-            var iframeEl = document.getElementById("insticator-embed");
-            var div = document.createElement("div");
-            div.id = "app";
-            iframeEl.appendChild(div);
-
-        }
-    </script>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 <body>
 <h1>Welcome to the mobile web</h1>
-<div id="insticator-embed"></div>
+<div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu fermentum enim. Quisque molestie egestas libero sed faucibus. Vivamus viverra ipsum sit amet ipsum convallis, vel suscipit justo scelerisque. Curabitur a arcu gravida, venenatis felis et, volutpat risus. Donec auctor, augue eu pellentesque auctor, leo magna sollicitudin tortor, ac fermentum ex odio tempor nisl. Suspendisse potenti. Vivamus consequat, mi sit amet vestibulum laoreet, felis dolor porta tortor, a tristique nulla nisi at nisl.
+
+    Suspendisse cursus sagittis sem vel tincidunt. Donec lacinia rhoncus mauris, nec dictum lorem placerat quis. Integer risus nisl, volutpat id diam sit amet, efficitur malesuada massa. Suspendisse eget auctor arcu. Mauris et augue eget libero facilisis condimentum vitae ac ipsum. Nullam et neque ut sem ullamcorper finibus. Nullam scelerisque tortor vitae aliquet convallis. Aliquam vitae nisi et felis accumsan ornare. Pellentesque est nibh, rhoncus vitae imperdiet in, posuere sit amet tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+    Pellentesque non sem facilisis enim euismod imperdiet ultrices quis ligula. Sed commodo vel neque nec facilisis. Vivamus accumsan augue eget sem volutpat malesuada. Ut accumsan dapibus nibh pulvinar molestie. Morbi suscipit, nulla nec convallis maximus, quam augue iaculis arcu, et porta ante sem sit amet ligula. Phasellus et posuere odio. Sed fringilla finibus ex, ac tristique augue fringilla in. Praesent congue ultrices eros, quis sodales eros placerat vitae.
+
+    Nunc non sollicitudin mi. Donec leo orci, gravida a dictum vel, porta sit amet tortor. Integer porta justo nec neque laoreet, eget fringilla diam mollis. Fusce dapibus efficitur turpis, nec imperdiet dolor sodales sed. Proin vel consectetur tortor. Aenean vel fermentum turpis. Donec suscipit orci rutrum pretium bibendum.
+
+    Proin ex eros, tempor et aliquam non, facilisis ac nisi. Curabitur a mi tellus. Pellentesque laoreet vestibulum ligula in auctor. Cras luctus, mi vel posuere consectetur, magna magna maximus sem, sed accumsan est sapien sed lacus. Nam luctus odio ligula, sed porttitor purus fringilla eu. In tincidunt semper hendrerit. Vestibulum quam risus, euismod non est et, rutrum dapibus turpis. Nullam dictum, ipsum ultricies iaculis bibendum, felis arcu vestibulum elit, eget dignissim quam dui non dui. Donec sed nunc risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Aenean a sagittis tellus. Sed vestibulum lorem eget mattis mollis. Cras id efficitur orci.
+</div>
+<amp-iframe width="100" height="350px"
+            sandbox="allow-scripts allow-same-origin"
+            layout="responsive"
+            frameborder="0"
+            src="https://www.vladdeev.com/ampembed">
+</amp-iframe>
 </body>
 </html>
