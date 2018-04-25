@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>Embed test page</title>
+    <script>
+        window.onload = function() {
+            if (window.navigator.userAgent.indexOf('MSIE ') > 0 || window.navigator.userAgent.indexOf('Trident/') > 0) {
+                console.log('IE Detected');
+                return null;
+            }
+            var iframeEl = document.getElementById("insticator-embed");
+            iframeEl.border="none";
+            var div = document.createElement("div");
+            div.id = "app";
+            iframeEl.contentWindow.document.body.appendChild(div);
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.async = true;
+            script.src = "https://s3.amazonaws.com/embed-v4-localhost/embed-core/embed-core-amp.js";
+            iframeEl.contentWindow.document.head.appendChild(script);
+        }
+    </script>
+</head>
+
+<body>
+    <iframe id="insticator-embed"></iframe>
+</body>
+</html>
